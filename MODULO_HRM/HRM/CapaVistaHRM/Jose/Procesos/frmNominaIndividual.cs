@@ -25,7 +25,7 @@ namespace CapaVistaHRM.Jose.Procesos
         {
             cmbPercepciones.Items.Clear();
             cmbPercepciones.Items.Add("Seleccione...");
-            llenarse("tipopercepciondeduccion", "tipoPercepcionDeduccion", "idTipoPercepcionDeduccion", cmbPercepciones, 0);
+            llenarse("tipopercepciondeduccion", "signo", "idTipoPercepcionDeduccion", cmbPercepciones, 0);
             cmbPercepciones.SelectedIndex = 0;
             ////////////////
             cmbNomina.Items.Clear();
@@ -258,6 +258,32 @@ namespace CapaVistaHRM.Jose.Procesos
         private void txtValor_KeyPress(object sender, KeyPressEventArgs e)
         {
             Validar.funcSoloNumerosDecimales(e);
+        }
+        public void total()
+        {
+            double totalsuma = 0;
+            string tipo;
+            double valor = 0;
+            foreach (DataGridViewRow Myrow in dgvNominaIndividual.Rows)
+            {
+
+                valor = Convert.ToDouble(Myrow.Cells[6].Value);
+                tipo = Convert.ToString(Myrow.Cells[5].Value);
+               // if tipo
+                totalsuma = valor + totalsuma;
+            }
+            txtTotal.Text = Convert.ToString(totalsuma);
+
+        }
+
+        private void dgvNominaIndividual_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtTotal_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

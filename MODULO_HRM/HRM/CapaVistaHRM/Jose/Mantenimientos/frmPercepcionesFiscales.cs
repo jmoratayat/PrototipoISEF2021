@@ -137,7 +137,7 @@ namespace CapaVistaHRM.Jose.Mantenimientos
             //si se selecciona el radioButon de inactivo, el dato que se reflejara en el campo de texto sera e estado  0
             if (rdNegativo.Checked == true)
             {
-                txtSigno.Text = "-";
+                txtSigno.Text = "0";
             }
         }
 

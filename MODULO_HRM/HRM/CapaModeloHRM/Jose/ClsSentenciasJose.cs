@@ -243,7 +243,7 @@ namespace CapaModeloHRM.Jose
             string[] Campos = new string[300];
             int Codigo = Int32.Parse(codigo);
             int PosP = 0;
-            string Sql = "SELECT T.idTipoPercepcionDeduccion ,T.tipoPercepcionDeduccion,T.valor , T.formula FROM tipopercepciondeduccion T where T.idTipoPercepcionDeduccion = "+Codigo+""; ;
+            string Sql = "SELECT  T.signo,T.tipoPercepcionDeduccion ,T.valor ,T.idTipoPercepcionDeduccion FROM tipopercepciondeduccion T where T.idTipoPercepcionDeduccion = " + Codigo+""; ;
             try
             {
                 OdbcCommand Command = new OdbcCommand(Sql, Con.conexion());

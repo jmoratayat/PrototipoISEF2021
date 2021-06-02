@@ -54,6 +54,9 @@ namespace CapaVistaHRM.Jose.Procesos
             this.btnQuitar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNomina)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +92,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.lblTitulo.Location = new System.Drawing.Point(339, 9);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(368, 27);
+            this.lblTitulo.Size = new System.Drawing.Size(292, 21);
             this.lblTitulo.TabIndex = 25;
             this.lblTitulo.Text = "Generacion de Nomina General";
             // 
@@ -100,7 +103,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.cmbMoneda.Location = new System.Drawing.Point(191, 247);
             this.cmbMoneda.Margin = new System.Windows.Forms.Padding(4);
             this.cmbMoneda.Name = "cmbMoneda";
-            this.cmbMoneda.Size = new System.Drawing.Size(341, 28);
+            this.cmbMoneda.Size = new System.Drawing.Size(341, 25);
             this.cmbMoneda.TabIndex = 24;
             this.cmbMoneda.SelectedIndexChanged += new System.EventHandler(this.cmbMoneda_SelectedIndexChanged);
             // 
@@ -110,7 +113,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.dtFinal.Location = new System.Drawing.Point(191, 202);
             this.dtFinal.Margin = new System.Windows.Forms.Padding(4);
             this.dtFinal.Name = "dtFinal";
-            this.dtFinal.Size = new System.Drawing.Size(341, 27);
+            this.dtFinal.Size = new System.Drawing.Size(341, 23);
             this.dtFinal.TabIndex = 23;
             this.dtFinal.ValueChanged += new System.EventHandler(this.dtFinal_ValueChanged);
             // 
@@ -120,7 +123,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.dtInicio.Location = new System.Drawing.Point(191, 154);
             this.dtInicio.Margin = new System.Windows.Forms.Padding(4);
             this.dtInicio.Name = "dtInicio";
-            this.dtInicio.Size = new System.Drawing.Size(341, 27);
+            this.dtInicio.Size = new System.Drawing.Size(341, 23);
             this.dtInicio.TabIndex = 22;
             this.dtInicio.ValueChanged += new System.EventHandler(this.dtInicio_ValueChanged);
             // 
@@ -130,7 +133,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.txtNombre.Location = new System.Drawing.Point(191, 108);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(341, 27);
+            this.txtNombre.Size = new System.Drawing.Size(341, 23);
             this.txtNombre.TabIndex = 21;
             // 
             // txtCodigo
@@ -139,7 +142,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.txtCodigo.Location = new System.Drawing.Point(191, 73);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(124, 27);
+            this.txtCodigo.Size = new System.Drawing.Size(124, 23);
             this.txtCodigo.TabIndex = 20;
             // 
             // label5
@@ -150,7 +153,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.label5.Location = new System.Drawing.Point(35, 247);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 20);
+            this.label5.Size = new System.Drawing.Size(60, 17);
             this.label5.TabIndex = 19;
             this.label5.Text = "Moneda";
             // 
@@ -162,7 +165,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.label4.Location = new System.Drawing.Point(35, 202);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 20);
+            this.label4.Size = new System.Drawing.Size(81, 17);
             this.label4.TabIndex = 18;
             this.label4.Text = "Fecha Final";
             // 
@@ -174,7 +177,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.label3.Location = new System.Drawing.Point(34, 163);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 20);
+            this.label3.Size = new System.Drawing.Size(85, 17);
             this.label3.TabIndex = 17;
             this.label3.Text = "Fecha Inicio";
             // 
@@ -186,7 +189,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.label2.Location = new System.Drawing.Point(34, 117);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.Size = new System.Drawing.Size(61, 17);
             this.label2.TabIndex = 16;
             this.label2.Text = "Nombre";
             // 
@@ -198,7 +201,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.label1.Location = new System.Drawing.Point(34, 77);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 20);
+            this.label1.Size = new System.Drawing.Size(57, 17);
             this.label1.TabIndex = 15;
             this.label1.Text = "Codigo";
             // 
@@ -208,7 +211,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.txtCodigoMoneda.Location = new System.Drawing.Point(540, 250);
             this.txtCodigoMoneda.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoMoneda.Name = "txtCodigoMoneda";
-            this.txtCodigoMoneda.Size = new System.Drawing.Size(54, 27);
+            this.txtCodigoMoneda.Size = new System.Drawing.Size(54, 23);
             this.txtCodigoMoneda.TabIndex = 29;
             this.txtCodigoMoneda.Visible = false;
             // 
@@ -252,7 +255,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 99;
+            this.Column1.Width = 82;
             // 
             // Column2
             // 
@@ -260,7 +263,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 107;
+            this.Column2.Width = 91;
             // 
             // Column3
             // 
@@ -268,7 +271,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 118;
+            this.Column3.Width = 99;
             // 
             // Column4
             // 
@@ -276,7 +279,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 118;
+            this.Column4.Width = 101;
             // 
             // Column5
             // 
@@ -284,7 +287,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            this.Column5.Width = 208;
+            this.Column5.Width = 172;
             // 
             // Column6
             // 
@@ -292,7 +295,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
-            this.Column6.Width = 81;
+            this.Column6.Width = 68;
             // 
             // btnQuitar
             // 
@@ -331,12 +334,46 @@ namespace CapaVistaHRM.Jose.Procesos
             this.btnAyuda.UseVisualStyleBackColor = true;
             this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
+            // txtTotal
+            // 
+            this.txtTotal.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.Location = new System.Drawing.Point(847, 633);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(124, 23);
+            this.txtTotal.TabIndex = 37;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(787, 636);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 17);
+            this.label6.TabIndex = 36;
+            this.label6.Text = "TOTAL";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(765, 633);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 38;
+            this.button2.Text = "TOTAL";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // frmGenerarNomina
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(57)))), ((int)(((byte)(139)))));
-            this.ClientSize = new System.Drawing.Size(1010, 635);
+            this.ClientSize = new System.Drawing.Size(1010, 676);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAyuda);
             this.Controls.Add(this.btnQuitar);
@@ -362,6 +399,7 @@ namespace CapaVistaHRM.Jose.Procesos
             this.Name = "frmGenerarNomina";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Generacion de nomina General";
+            this.Load += new System.EventHandler(this.frmGenerarNomina_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNomina)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -395,5 +433,8 @@ namespace CapaVistaHRM.Jose.Procesos
         private System.Windows.Forms.Button btnQuitar;
         private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button2;
     }
 }

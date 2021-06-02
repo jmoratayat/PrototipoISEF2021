@@ -250,10 +250,41 @@ namespace CapaVistaHRM.Jose.Procesos
             frm.Show();
             this.Close();
         }
+        public void total()
+        {
+            double totalsuma = 0;
+            string tipo;
+            double valor = 0;
+            foreach (DataGridViewRow Myrow in dgvNomina.Rows)
+            {
+                valor = Convert.ToDouble(Myrow.Cells[5].Value);
+                tipo = Convert.ToString(Myrow.Cells[3].Value);
+                if (tipo =="+")
+                {
+                    totalsuma = totalsuma + valor;
+                }
+                if (tipo == "0")
+                {
+                    totalsuma = totalsuma - valor;
+                }
+            }
+            txtTotal.Text = Convert.ToString(totalsuma);
+        }
 
         private void btnAyuda_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this,"AyudaJose/AyudaNomina.chm","Generacion de nomina.html");
+        }
+
+        private void frmGenerarNomina_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            total();
+         
         }
     }
 }
